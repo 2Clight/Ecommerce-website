@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema({
             default: 1
         },
         product: {
-            type: mongoose.Schema.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId, // Reference to the Product model instead of a getting the product details
             ref: 'Product'
         }
     }],
