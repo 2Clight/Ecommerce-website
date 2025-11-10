@@ -72,7 +72,10 @@ const Navbar = () => {
         <button onClick={logout} className="block text-left py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"><LogOut /></button>
         </>
       ) : (
+        <>
+        <button onClick={() => navigate('/signup')} className="mr-4 px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">Sign Up</button>
         <button onClick={() => navigate('/login')} className="px-4 py-2 bg-amber-600 text-black rounded cursor-pointer">Log In</button>
+        </>
       )}
 
       {isAdmin && (
